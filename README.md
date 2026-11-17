@@ -1,4 +1,18 @@
-# SnowFlakeUz
+# SnowFlakeUz ❄️
+
+Free, open-source snow for your Mac desktop. Snow settles on your windows and the Dock, you can build snowmen, a tractor clears the drifts, and a cozy cabin works as a live wallpaper.
+Bepul va ochiq kodli: Mac ish stolingiz uchun qor.
+
+## Download / Yuklab olish (oddiy foydalanuvchilar uchun)
+1. [Releases](../../releases) bo'limidan `SnowFlakeUz-macOS.zip` ni yuklab oling (Apple Silicon va Intel, macOS 12+)
+2. Zip'ni oching va `SnowFlakeUz.app` ni **Applications** papkasiga tashlang
+3. Birinchi marta **o'ng tugma → Open** bosing (ilova Apple tomonidan imzolanmagan, shuning uchun macOS ogohlantiradi).
+   Agar "damaged" desa, Terminal'da: `xattr -dr com.apple.quarantine /Applications/SnowFlakeUz.app`
+4. Yuqori menyudagi ❄ belgisidan sozlamalar ochiladi
+
+Inspired by apps like Flake (tryflake.ru). All code and artwork here are original. / Kod va rasmlar original.
+
+---
 
 Mac ish stolida qor yog'diradigan menu-bar ilova (Swift / AppKit). Hammasi original kod va original chizmalar.
 
@@ -36,4 +50,3 @@ Yuqori menyu qatoridagi ❄ belgisidan hamma sozlamalar ochiladi.
 
 ## Eslatma
 Kod Linux'da yozilgan va hali Xcode'da sinab ko'rilmagan. Kompilyatsiya xatosi chiqsa, xatoni yuboring.
-# snow-flake-for-freee
