@@ -50,4 +50,3 @@ Yuqori menyu qatoridagi ❄ belgisidan hamma sozlamalar ochiladi.
 
 ## Eslatma
 Kod Linux'da yozilgan va hali Xcode'da sinab ko'rilmagan. Kompilyatsiya xatosi chiqsa, xatoni yuboring.
-# snowflake-win
