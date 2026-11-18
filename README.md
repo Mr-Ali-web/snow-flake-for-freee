@@ -12,6 +12,13 @@ Bepul va ochiq kodli: Mac ish stolingiz uchun qor.
 
 Inspired by apps like Flake (tryflake.ru). All code and artwork here are original. / Kod va rasmlar original.
 
+## Windows
+Windows 10/11 versiyasi `windows/` papkasida (C# / WPF, .NET 8). Tayyor `SnowFlakeUz.exe` GitHub Actions orqali avtomatik yig'iladi:
+**Actions** → oxirgi "Build Windows" → **Artifacts** → `SnowFlakeUz-windows`. Yoki Releases bo'limidan `SnowFlakeUz-windows.zip`.
+Zip'ni oching va `SnowFlakeUz.exe` ni ishga tushiring, sozlamalar vazifalar panelidagi (tray) ❄ belgisida.
+Birinchi marta Windows SmartScreen "Unknown publisher" desa: **More info → Run anyway** (ilova imzolanmagan).
+Windows versiyasida hozircha jonli oboy (kulba) yo'q, qolgan hammasi bor.
+
 ---
 
 Mac ish stolida qor yog'diradigan menu-bar ilova (Swift / AppKit). Hammasi original kod va original chizmalar.

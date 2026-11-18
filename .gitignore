@@ -3,3 +3,7 @@ build/
 *.app
 *.zip
 .swiftpm/
+
+windows/bin/
+windows/obj/
+out/
