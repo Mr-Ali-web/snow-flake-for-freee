@@ -1,8 +1,7 @@
 # SnowFlakeUz ❄️
 
-Free, open-source snow for your Mac desktop. Watch snow settle on your windows and the Dock, build snowmen, let a tractor clear the drifts, or set a cozy cabin as your live wallpaper.
-
-🇺🇿 Bepul va ochiq kodli: Mac ish stolingiz uchun qor. Qor derazalaringiz va Dock ustiga yog'adi, qorbobo yasashingiz mumkin, traktor qorni tozalaydi, shinam kulba esa jonli oboy bo'lib xizmat qiladi.
+Free, open-source snow for your Mac desktop. Snow settles on your windows and the Dock, you can build snowmen, a tractor clears the drifts, and a cozy cabin works as a live wallpaper.
+Bepul va ochiq kodli: Mac ish stolingiz uchun qor.
 
 ## Download / Yuklab olish (oddiy foydalanuvchilar uchun)
 1. [Releases](../../releases) bo'limidan `SnowFlakeUz-macOS.zip` ni yuklab oling (Apple Silicon va Intel, macOS 12+)
@@ -18,7 +17,7 @@ Windows 10/11 versiyasi `windows/` papkasida (C# / WPF, .NET 8). Tayyor `SnowFla
 **Actions** → oxirgi "Build Windows" → **Artifacts** → `SnowFlakeUz-windows`. Yoki Releases bo'limidan `SnowFlakeUz-windows.zip`.
 Zip'ni oching va `SnowFlakeUz.exe` ni ishga tushiring, sozlamalar vazifalar panelidagi (tray) ❄ belgisida.
 Birinchi marta Windows SmartScreen "Unknown publisher" desa: **More info → Run anyway** (ilova imzolanmagan).
-Windows versiyasida hozircha jonli oboy (kulba) yo'q, qolgan hammasi bor.
+Jonli oboy (qishki kulba) tray menyusidan yoqiladi va ish stoli ikonkalari orqasida ishlaydi.
 
 ---
 

@@ -105,6 +105,7 @@ namespace SnowFlakeUz
         public bool Accumulate = true;
         public bool PlowEnabled = true;
         public PlowKind CurrentPlow = PlowKind.Tractor;
+        public bool WallpaperOn;
 
         // State
         public readonly List<Flake> Flakes = new List<Flake>();

@@ -11,6 +11,8 @@ namespace SnowFlakeUz
     {
         private readonly Simulation sim = Simulation.I;
         private readonly List<OverlayWindow> overlays = new List<OverlayWindow>();
+        private readonly List<WallpaperWindow> wallpapers = new List<WallpaperWindow>();
+        private int wallTick;
         private readonly List<KeyValuePair<ToolStripMenuItem, Func<bool>>> checks =
             new List<KeyValuePair<ToolStripMenuItem, Func<bool>>>();
         private ToolStripMenuItem pauseItem;
@@ -38,6 +40,7 @@ namespace SnowFlakeUz
                 {
                     sim.Init();
                     BuildOverlays();
+                    BuildWallpapers();
                 }));
         }
 
@@ -53,6 +56,28 @@ namespace SnowFlakeUz
             }
         }
 
+        private void BuildWallpapers()
+        {
+            foreach (WallpaperWindow w in wallpapers) w.Close();
+            wallpapers.Clear();
+            if (!sim.WallpaperOn) return;
+            foreach (Screen s in Screen.AllScreens)
+            {
+                var w = new WallpaperWindow(s);
+                if (w.Embed())
+                {
+                    wallpapers.Add(w);
+                }
+                else
+                {
+                    w.Close();
+                    sim.WallpaperOn = false;
+                    tray.ShowBalloonTip(4000, "SnowFlakeUz", "Jonli oboyni ish stoliga joylab bo'lmadi.", ToolTipIcon.Warning);
+                    return;
+                }
+            }
+        }
+
         private void OnFrame(object sender, EventArgs e)
         {
             double now = clock.Elapsed.TotalSeconds;
@@ -62,6 +87,8 @@ namespace SnowFlakeUz
             sim.Tick(dt, now);
             foreach (OverlayWindow o in overlays)
                 if (o.IsVisible) o.Canvas.InvalidateVisual();
+            if (sim.WallpaperOn && ++wallTick % 3 == 0)
+                foreach (WallpaperWindow w in wallpapers) w.Canvas.InvalidateVisual();
         }
 
         // ------------------------------------------------------------ tray menu
@@ -113,6 +140,11 @@ namespace SnowFlakeUz
             Add(plow.DropDownItems, "Belkurakli pingvin", () => sim.CurrentPlow = PlowKind.Penguin, () => sim.CurrentPlow == PlowKind.Penguin);
 
             menu.Items.Add(new ToolStripSeparator());
+            Add(menu.Items, "Jonli oboy (qishki kulba)", () =>
+            {
+                sim.WallpaperOn = !sim.WallpaperOn;
+                BuildWallpapers();
+            }, () => sim.WallpaperOn);
             pauseItem = Add(menu.Items, "Pauza", () => sim.Paused = !sim.Paused);
             Add(menu.Items, "Oynalarda qor yig'ilsin", () =>
             {
