@@ -1,7 +1,8 @@
 # SnowFlakeUz ❄️
 
-Free, open-source snow for your Mac desktop. Snow settles on your windows and the Dock, you can build snowmen, a tractor clears the drifts, and a cozy cabin works as a live wallpaper.
-Bepul va ochiq kodli: Mac ish stolingiz uchun qor.
+Free, open-source snow for your Mac desktop. Watch snow settle on your windows and the Dock, build snowmen, let a tractor clear the drifts, or set a cozy cabin as your live wallpaper.
+
+🇺🇿 Bepul va ochiq kodli: Mac ish stolingiz uchun qor. Qor derazalaringiz va Dock ustiga yog'adi, qorbobo yasashingiz mumkin, traktor qorni tozalaydi, shinam kulba esa jonli oboy bo'lib xizmat qiladi.
 
 ## Download / Yuklab olish (oddiy foydalanuvchilar uchun)
 1. [Releases](../../releases) bo'limidan `SnowFlakeUz-macOS.zip` ni yuklab oling (Apple Silicon va Intel, macOS 12+)
